@@ -1,0 +1,123 @@
+.content-section {
+  display: none;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+.content-section.active {
+  display: block;
+}
+
+/* Stil za listu reklama */
+.ad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.ad-item {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.ad-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.ad-title {
+  margin-top: 5px;
+}
+
+.delete-checkbox {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+  transform: scale(1.2);
+}
+
+/* Stil za AdManager panel */
+.ad-manager {
+  background-color: #242424;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.ad-manager h4 {
+  margin-bottom: 15px;
+}
+
+.ad-manager p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Stilovi za Detalji Reklame sekciju */
+.displej-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 60px);
+  /* 15 columns of fixed 60px width */
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: start;
+  /* Aligns grid to the start */
+}
+
+.displej-item {
+  text-align: center;
+  width: 60px;
+  /* Fixed width */
+}
+
+.displej-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.displej-item span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+/* Stil gornjeg reda u detaljima reklame */
+.detail-header {
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+/* Tamni mod za modal */
+.modal-content {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: #444;
+}
+
+/* Stil za flatpickr inline input */
+#dateRange {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Smanjeni slider za vrijeme */
+#timeSlider {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.flatpickr-calendar.inline {
+  margin: 0 auto;
+}
